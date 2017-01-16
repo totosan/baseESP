@@ -7,21 +7,16 @@ This repository contains code for setting up a dev environment, that enables dev
   Setting up your computer for accessing the hardware under windows is pretty easy. Connect it with USB, if you have a Developer-Board. 
   Otherwise use a search-engine you prefer or have a look to this great ["Instructable-Page"](http://www.instructables.com/id/ESP8266-Wi-fi-module-explain-and-connection/?ALLSTEPS)
 * **Git** - download [here](https://git-scm.com/downloads) (as well as [Git Credential Manager](https://java.visualstudio.com/Downloads/gitcredentialmanager/Index) for Linux or Mac OS)
-* **VSCode** - you can install it from [here](https://code.visualstudio.com/) or clone it from [here](https://github.com/Microsoft/vscode.git).
-* **Node.JS** - Download [here](https://nodejs.org/en/)
-* **NPM** 
+* **VSCode** - you can install it from [here](https://code.visualstudio.com/) or clone it from [here](https://github.com/Microsoft/vscode.git). 
+* Install **Arduino IDE** [here](https://www.arduino.cc/en/Main/Software)
 
-
-## How to setup
-1. Clone this repository
-1. **npm install**
-1. **npm install -g gulp**
-1. modify config.json and add the COM-port, where ESP8266 is connected to 
-    1. open **config.json**
-    1. open DeviceManager on Windows and have a look to the node *"Connections (COM & LPT)"*
-    1. add the listed COM-port ID *(e.g. "COM3")* for your UART-Device as following `"device_port": "COM3"`
-1. **gulp install-tools**
-1. **gulp run** or with listener **gulp run --listen**
+## How to setup (Windows)
+1. Open powershell
+1. create directory where to put sources: `md baseESP`
+1. `cd baseESP`
+1. Clone this repository: `git clone http://github.com/totosan/baseESP.git`
+2. run `SetUpVSCForArduino.ps1` from powershell
+3. type `code .`
 
 ### Congratulations! You've completed.
 
